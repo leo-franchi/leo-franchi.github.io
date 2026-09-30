@@ -1,0 +1,151 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[a4paper,left=1.7cm,right=1.7cm,top=1.45cm,bottom=1.55cm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+\definecolor{sectiongray}{gray}{0.42}
+\definecolor{muted}{gray}{0.28}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\renewcommand{\arraystretch}{1.02}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\newcommand{\cvsection}[1]{%
+  \vspace{0.82em}%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}>{\raggedleft\arraybackslash}p{2.55cm}@{\hspace{0.35cm}}X@{}}
+    \textcolor{sectiongray}{\rule{2.35cm}{1.15pt}} & {\large\color{sectiongray}#1}
+  \end{tabularx}
+  \vspace{0.18em}%
+}
+
+\newcommand{\datedentry}[2]{%
+  \noindent
+  \begin{tabularx}{\textwidth}{@{}>{\raggedleft\arraybackslash}p{2.55cm}@{\hspace{0.35cm}}X@{}}
+    \small #1 & \parbox[t]{\linewidth}{#2}
+  \end{tabularx}
+  \vspace{0.15em}%
+}
+
+\newenvironment{preprints}{%
+  \begin{enumerate}[label=\arabic*.,leftmargin=3.28cm,labelsep=0.55em,itemsep=0.42em,topsep=0.15em,parsep=0pt]
+}{%
+  \end{enumerate}
+}
+
+\begin{document}
+
+\begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{7.0cm}@{}}
+  {\fontsize{25}{29}\selectfont Leonardo Franchi} &
+  \begin{tabular}{@{}r@{}}
+    PhD Student in Mathematics\\
+    University of Cambridge\\
+    \href{mailto:lf511@cam.ac.uk}{lf511@cam.ac.uk}\\
+    \href{https://leo-franchi.github.io/}{leo-franchi.github.io}
+  \end{tabular}
+\end{tabularx}
+
+\vspace{-0.15em}
+{\large\itshape Curriculum Vitae}
+
+\cvsection{Education}
+
+\datedentry{Oct. 2025--present}{%
+  \textbf{PhD in Mathematics}, University of Cambridge, Cambridge, UK.\\
+  Supervisor: Timothy Gowers.
+}
+
+\datedentry{Oct. 2023--Jul. 2025}{%
+  \textbf{Master's Degree in Mathematics}, University of Padua, Padua, Italy.\\
+  Final grade: 110/110 cum laude. Thesis: \emph{Osgood meets DiPerna--Lions}. Advisor: Guido De Philippis.
+}
+
+\datedentry{Oct. 2020--Oct. 2025}{%
+  \textbf{Galilean Diploma}, Galilean School of Higher Education, University of Padua, Padua, Italy.
+}
+
+\datedentry{Oct. 2020--Feb. 2023}{%
+  \textbf{Bachelor's Degree in Mathematics}, University of Padua, Padua, Italy.\\
+  Final grade: 110/110 cum laude.
+}
+
+\cvsection{Submitted papers and preprints}
+
+\begin{preprints}
+  \item Guido De Philippis and Leonardo Franchi,
+  \emph{Osgood meets Ambrosio--DiPerna--Lions},
+  \href{https://arxiv.org/abs/2607.28118}{arXiv:2607.28118} (2026).
+
+  \item Valentino Badalucco and Leonardo Franchi,
+  \emph{Fractal uncertainty principle over $\mathbb{Q}_p$},
+  \href{https://arxiv.org/abs/2607.11534}{arXiv:2607.11534} (2026).
+
+  \item Leonardo Franchi, W. T. Gowers and Fredy Yip,
+  \emph{Product-free subsets of $(0,1)$},
+  \href{https://arxiv.org/abs/2607.06073}{arXiv:2607.06073} (2026).
+
+  \item Gaia Carenini and Leonardo Franchi,
+  \emph{A unified abstract regularity lemma},
+  \href{https://arxiv.org/abs/2606.06192}{arXiv:2606.06192} (2026).
+
+  \item Gaia Carenini and Leonardo Franchi,
+  \emph{A strengthening of Chang's lemma},
+  \href{https://arxiv.org/abs/2605.07916}{arXiv:2605.07916} (2026).
+\end{preprints}
+
+\cvsection{Invited Talks}
+
+\datedentry{12 Oct. 2026}{%
+  \emph{Product-free subsets of $(0,1)$ and a strengthened Brunn--Minkowski inequality}.\\
+  Junior Number Theory Seminar, University of Oxford, Oxford, UK.
+}
+
+\datedentry{29 Sep. 2026}{%
+  \emph{Product-free subsets of $(0,1)$ and a strengthened Brunn--Minkowski inequality}.\\
+  Combinatorics Seminar, University of Bristol, Bristol, UK.
+}
+
+\datedentry{26--28 Jun. 2026}{%
+  \emph{A strengthening of Chang's lemma}.\\
+  WOMBL 18 (Warwick--Oxbridge--Manchester--Bristol--Lancaster Meeting on Additive Combinatorics and Analytic Number Theory), Ambleside Campus, University of Cumbria, UK.
+}
+
+\newpage
+\cvsection{Awards and Funding}
+
+\datedentry{2025-2029}{Trinity Cambridge Research Studentship, supported by the Isaac Newton Trust.}
+\datedentry{2024}{First Prize, International Mathematics Competition for University Students, Blagoevgrad, Bulgaria.}
+\datedentry{2020}{First place, Italian Mathematical Olympiad.}
+
+\cvsection{Teaching and Academic Experiences}
+
+\datedentry{Michaelmas 2026}{%
+  \textbf{Undergraduate Supervisor, Optimisation}, Queens' College, University of Cambridge.
+}
+
+\datedentry{Lent 2026}{%
+  \textbf{Undergraduate Supervisor, Probability (Part IA)}, Queens' College, University of Cambridge.
+}
+
+\datedentry{Dec. 2025}{%
+  \textbf{Examiner for Undergraduate Mathematics Admissions}, Queens' College, University of Cambridge.
+}
+
+\datedentry{Jun. 2023, 2024}{%
+  \textbf{Lecturer, International Mathematics Summer Camp}, Beijing Institute of Mathematical Sciences and Applications (BIMSA), Beijing, China.
+}
+
+\end{document}

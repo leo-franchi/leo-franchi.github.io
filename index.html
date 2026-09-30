@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="author" content="Leonardo Franchi">
+  <meta name="description" content="Leonardo Franchi. PhD student at the University of Cambridge, under the supervision of Timothy Gowers.">
+  <title>Leonardo Franchi</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #000000;
+      --text: #eeeeee;
+      --muted: #aaaaaa;
+      --rule: #303030;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { background: var(--background); }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-wrap: anywhere;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 72px 36px 80px;
+    }
+
+    h1, h2, h3, p { margin: 0; }
+
+    h1 {
+      margin-bottom: 24px;
+      font-size: 38px;
+      font-weight: 500;
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+    }
+
+    .bio { max-width: 740px; font-size: 18px; }
+
+    a {
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 4px;
+      text-decoration-thickness: 1px;
+    }
+
+    a:hover { text-decoration-thickness: 2px; }
+
+    a:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 5px;
+      border-radius: 2px;
+    }
+
+    .profile-links, .paper-links {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+    }
+
+    .profile-links { margin-top: 20px; }
+    .separator { color: var(--muted); }
+    .cv-placeholder { color: var(--muted); cursor: default; }
+
+    .research {
+      margin-top: 40px;
+      padding-top: 28px;
+      border-top: 1px solid var(--rule);
+    }
+
+    h2 {
+      margin-bottom: 24px;
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 1.3;
+      letter-spacing: -0.3px;
+    }
+
+    .papers { padding: 0; margin: 0; list-style: none; }
+    .paper + .paper { margin-top: 28px; }
+    h3 { font-size: 18px; line-height: 1.5; font-weight: 600; }
+    .authors { margin-top: 3px; font-size: 16px; }
+    .publication { color: var(--muted); font-size: 15px; }
+    .paper-links { margin-top: 5px; font-size: 15px; }
+
+    .math {
+      white-space: nowrap;
+      font-family: "Cambria Math", "STIX Two Math", "Times New Roman", serif;
+    }
+
+    .math sub { font-size: 75%; line-height: 0; font-style: italic; }
+
+    @media (max-width: 600px) {
+      main { padding: 38px 24px 56px; }
+      h1 { font-size: 32px; margin-bottom: 20px; }
+      .bio { font-size: 17px; }
+      .research { margin-top: 32px; padding-top: 24px; }
+      h2 { font-size: 24px; }
+    }
+
+    @media print {
+      :root {
+        color-scheme: light;
+        --background: #ffffff;
+        --text: #000000;
+        --muted: #555555;
+        --rule: #cccccc;
+      }
+      main { max-width: none; padding: 0; }
+      .paper { break-inside: avoid; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Leonardo Franchi</h1>
+      <p class="bio">
+        I am a second-year PhD student at the University of Cambridge,
+        under the supervision of Timothy Gowers.
+      </p>
+
+      <div class="profile-links" role="group" aria-label="Academic profiles and CV">
+        <a href="https://arxiv.org/search/?query=Franchi%2C+Leonardo&amp;searchtype=author&amp;abstracts=show&amp;order=-announced_date_first&amp;size=50">arXiv</a>
+        <span class="separator" aria-hidden="true">·</span>
+
+        <!-- CV is plain text for now. To activate it, upload cv.pdf
+             next to index.html and replace the following span with:
+             <a href="cv.pdf">CV</a>
+        -->
+        <span class="cv-placeholder" title="CV not yet available">CV</span>
+      </div>
+    </header>
+
+    <section class="research" aria-labelledby="research-heading">
+      <h2 id="research-heading">Research</h2>
+
+      <ul class="papers" role="list">
+        <!-- To add a paper, duplicate a complete li.paper block. -->
+        <li class="paper">
+          <h3>Osgood meets Ambrosio-DiPerna-Lions</h3>
+          <p class="authors">Guido De Philippis, Leonardo Franchi</p>
+          <p class="publication">Preprint, 2026</p>
+          <p class="paper-links">
+            <a href="https://arxiv.org/abs/2607.28118">arXiv</a>
+            <span class="separator" aria-hidden="true">·</span>
+            <a href="https://arxiv.org/pdf/2607.28118">PDF</a>
+          </p>
+        </li>
+
+        <li class="paper">
+          <h3>Fractal uncertainty principle over <span class="math">ℚ<sub>p</sub></span></h3>
+          <p class="authors">Valentino Badalucco, Leonardo Franchi</p>
+          <p class="publication">Preprint, 2026</p>
+          <p class="paper-links">
+            <a href="https://arxiv.org/abs/2607.11534">arXiv</a>
+            <span class="separator" aria-hidden="true">·</span>
+            <a href="https://arxiv.org/pdf/2607.11534">PDF</a>
+          </p>
+        </li>
+
+        <li class="paper">
+          <h3>Product-free subsets of <span class="math">(0,1)</span></h3>
+          <p class="authors">Leonardo Franchi, W. T. Gowers, Fredy Yip</p>
+          <p class="publication">Preprint, 2026</p>
+          <p class="paper-links">
+            <a href="https://arxiv.org/abs/2607.06073">arXiv</a>
+            <span class="separator" aria-hidden="true">·</span>
+            <a href="https://arxiv.org/pdf/2607.06073">PDF</a>
+          </p>
+        </li>
+
+        <li class="paper">
+          <h3>A unified abstract regularity lemma</h3>
+          <p class="authors">Gaia Carenini, Leonardo Franchi</p>
+          <p class="publication">Preprint, 2026</p>
+          <p class="paper-links">
+            <a href="https://arxiv.org/abs/2606.06192">arXiv</a>
+            <span class="separator" aria-hidden="true">·</span>
+            <a href="https://arxiv.org/pdf/2606.06192">PDF</a>
+          </p>
+        </li>
+
+        <li class="paper">
+          <h3>A strengthening of Chang's lemma</h3>
+          <p class="authors">Gaia Carenini, Leonardo Franchi</p>
+          <p class="publication">Preprint, 2026</p>
+          <p class="paper-links">
+            <a href="https://arxiv.org/abs/2605.07916">arXiv</a>
+            <span class="separator" aria-hidden="true">·</span>
+            <a href="https://arxiv.org/pdf/2605.07916">PDF</a>
+          </p>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
